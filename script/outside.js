@@ -44,6 +44,10 @@ var Outside = {
 				'cured meat': 1
 			}
 		},
+		'guard': {
+		  delay: 10,
+		  stores: {}
+		},
 		'iron miner': {
 			delay: 10,
 			stores: {

@@ -145,6 +145,61 @@ var Room = {
 				};
 			}
 		},
+		'palisade': {
+			button: null,
+			maximum: 2,
+			availableMsg: "you need to see your enemies approaching",
+			buildMsg: "a watchtower now guards the village.",
+			type: 'building',
+			cost: function() {
+				return {
+					'wood': 800,
+				};
+			}
+		},
+		'watchtower': {
+    	button: null,
+    	maximum: 2,
+    	availableMsg: "you need to see your enemies approaching",
+    	buildMsg: "a watchtower now guards the village.",
+    	maxMsg: 'two towers cover everything.',
+    	type: 'building',
+    	cost: function() {
+    		return {
+    			'wood': 800,
+    			'iron': 200
+    		};
+    	}
+    },
+    'fortifications': {
+    	button: null,
+    	maximum: 1,
+    	availableMsg: "a wall alone no longer suffices. builder says she can fortify this place.",
+    	buildMsg: "the village now sits behind a system of fortifications.",
+    	maxMsg: "there's no place for more guns.",
+    	type: 'building',
+    	cost: function() {
+    		return {
+    			'wood': 4000,
+    			'iron': 500,
+    			'steel': 200
+    		};
+    	}
+    },
+    'gun emplacement': {
+    	button: null,
+    	maximum: 8,
+    	availableMsg: "the fortifications could support large guns aimed outwards.",
+    	buildMsg: "a gun emplacement now wards off invaders.",
+    	type: 'building',
+    	cost: function() {
+    		return {
+					'wood': 300,
+					'steel': 200,
+					'sulphur': 200
+				}
+    	}
+    },
 		'torch': {
 			button: null,
 			type: 'tool',
